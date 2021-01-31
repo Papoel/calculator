@@ -15,6 +15,7 @@ body
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
+  font-family: 'Poppins',sans-serif;
 }
 
 .callout {
@@ -27,6 +28,7 @@ border-left-width: 1px;
 border-left-width: .25rem;
 border-radius: .25rem;
 width: auto;
+font-family: 'Comfortaa',cursive;
 }
 
 .callout-info {
@@ -44,6 +46,9 @@ width: auto;
 .callout>strong
 {
   font-size: 1.4rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  font-style: italic;
 }
 
 
@@ -65,8 +70,8 @@ ul.navbar-nav {
 .title
 {
   font-size: 3.5rem;
-  font-family: 'Abril Fatface', cursive;
-  font-weight: 100;
+  font-family: 'Cinzel',serif;
+  font-weight: 500;
   position: relative;
 }
 
@@ -77,12 +82,18 @@ ul.navbar-nav {
   background-color: #96e744;
   width: 5rem;
   height: 0.6rem;
-  bottom: -1px;
+  bottom: -2px;
 }
 
 .sub-title
 {
   color: #96e744;
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding: 0.5rem 0 0.5rem;
+}
+
+article>p
+{
+  font-size: 1.8rem;
+  line-height: 2;
 }
