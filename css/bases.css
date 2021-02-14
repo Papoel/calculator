@@ -15,7 +15,7 @@ body
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Comfortaa';
 }
 
 .callout {
@@ -70,7 +70,7 @@ ul.navbar-nav {
 .title
 {
   font-size: 3.5rem;
-  font-family: 'Cinzel',serif;
+  /* font-family: 'Cinzel',serif; */
   font-weight: 500;
   position: relative;
 }
@@ -87,13 +87,32 @@ ul.navbar-nav {
 
 .sub-title
 {
-  color: #96e744;
+  color: #e6be3d;
   font-size: 2rem;
   padding: 0.5rem 0 0.5rem;
+  position: relative;
+  letter-spacing: 4px;
+  left: 5px;
+}
+
+.sub-title::after {
+  content: '';
+  position: absolute;
+  background-color: #e6be3d;
+  width: .3rem;
+  height: 2rem;
+  left: -5px;
 }
 
 article>p
 {
   font-size: 1.8rem;
   line-height: 2;
+}
+
+label.input-group-text {
+  background-color: #96e744;
+  color: #262626;
+  font-family: 'cinzel';
+  border-radius: 4px;
 }
