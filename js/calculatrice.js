@@ -18,26 +18,24 @@ getPeriodChoice = () => {
   console.log(radioElement[select].periode)
 }
 
-//  Date du jour =
-let dateJ0 = new Date()
-// * Jour de la semaine
-let days = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"]
-let day = days[dateJ0.getDay()]
-// * Date du jour
-let date = dateJ0.getDate()
-// * Mois en cours
-let months = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "decembre"];
-let month = months[dateJ0.getMonth()]
-// * Année en cours
-year = dateJ0.getFullYear()
-// * Date Complète
-let fulllDate = day + ' ' + date + ' ' + month + ' ' + year
+// + ==> DATE DU JOUR <==
+// * Date du jour =
+let now = new Date()
+// * Date au format jj/mm/aaaa
+let DateJ0 = now.toLocaleDateString('fr-FR')
 
+// + ==> DATE SAISIE PAR L'UTILISATEUR <==
 
+/*
+  * Fonction qui calcul la différence entre deux dates (T = Temps écoulé)
+*/
+T = (d1, d2) => {
+  return ( d2 - d1 )
+}
 
-//!
-document.getElementById('date-full').innerHTML = dateJ0
-//!
+console.log('time ? : ', DateJ0.getTime())
+console.log(now.getTimezoneOffset())
+
 
 // - Mise en forme de ma DIV qui va recupéréer le nb de jour écouler entre les 2 dates
 const nbJour = document.getElementById('nbJour')
