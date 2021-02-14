@@ -19,7 +19,7 @@ getPeriodChoice = () => {
 }
 
 // + ==> DATE DU JOUR <==
-// * Date du jour =
+// * Date du jour 
 let now = new Date()
 // * Date au format jj/mm/aaaa
 let DateJ0 = now.toLocaleDateString('fr-FR')
@@ -29,14 +29,16 @@ let DateJ0 = now.toLocaleDateString('fr-FR')
 /*
   * Fonction qui calcul la différence entre deux dates (T = Temps écoulé)
 */
+
 T = (d1, d2) => {
   return ( d2 - d1 )
 }
 
-console.log('time ? : ', DateJ0.getTime())
-console.log(now.getTimezoneOffset())
-
-
+//! 
+/*
+  ! Trouver le moyen de calculer l'écart entre deux dates ...
+*/
+//!
 // - Mise en forme de ma DIV qui va recupéréer le nb de jour écouler entre les 2 dates
 const nbJour = document.getElementById('nbJour')
 // ? Ajouter du texte dans ma div => nbJour.textContent = fulllDate
